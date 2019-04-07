@@ -1,0 +1,49 @@
+buildscript {
+	dependencies {
+		classpath "org.springframework.boot:spring-boot-gradle-plugin:2.1.4.RELEASE"
+		classpath "net.ltgt.gradle:gradle-apt-plugin:0.15"
+	}
+}
+
+plugins {
+	id 'org.springframework.boot' version '2.1.4.RELEASE'
+	id 'java'
+	id 'war'
+}
+
+apply plugin: 'io.spring.dependency-management'
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'net.ltgt.apt'
+apply plugin: 'net.ltgt.apt-idea'
+apply plugin: 'war'
+
+
+
+group = 'com.lzn'
+version = '1.0.0'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile 'org.springframework.boot:spring-boot-starter-actuator'
+	compile 'org.springframework.boot:spring-boot-starter-web'
+	compile("org.springframework.boot:spring-boot-starter-cache")
+	providedRuntime group: 'org.springframework.boot', name: 'spring-boot-starter-tomcat', version: '2.1.4.RELEASE'
+
+	compile group: 'com.github.ben-manes.caffeine', name: 'caffeine', version: '2.7.0'
+
+	compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5'
+	compile group: 'org.apache.commons', name: 'commons-io', version: '1.3.2'
+	compile "org.projectlombok:lombok:1.18.4"
+
+	compile 'com.google.code.gson:gson:2.8.5'
+
+	apt "org.projectlombok:lombok:1.18.4"
+
+
+	testCompile 'org.springframework.boot:spring-boot-starter-test'
+}
