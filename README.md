@@ -24,7 +24,10 @@ parametry:
 * dst - docelowa waluta
 
 Zostanie zwrócony komunikat json z wynikiem lub komunikatem błędu:
-{
+{ 
+
 "result":6.989585517578807576710701055427413,
+
 "msg":"OK"
+
 }
