@@ -74,4 +74,7 @@ const calculateInterest = async () => {
   margin: 0 auto;
   padding: 2rem;
 }
+button {
+  width: auto;
+}
 </style>
