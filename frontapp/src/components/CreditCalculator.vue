@@ -97,4 +97,7 @@ th, td {
 th {
   background-color: #f2f2f2;
 }
+button {
+  width: auto;
+}
 </style>
