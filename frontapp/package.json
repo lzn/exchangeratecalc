@@ -1,18 +1,20 @@
 {
-  "name": "app",
+  "name": "frontapp",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "dev": "vite",
+    "build": "vite build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^5.1.0"
+    "@vitejs/plugin-vue": "^4.2.3",
+    "vite": "^4.4.10",
+    "vue": "^3.3.4"
   }
 }

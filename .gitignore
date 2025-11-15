@@ -29,4 +29,5 @@ HELP.md
 ### VS Code ###
 .vscode/
 app/node_modules/
+frontapp/node_modules/
 *.log
