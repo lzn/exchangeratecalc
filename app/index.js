@@ -13,13 +13,15 @@ app.post('/calculate-interest', (req, res) => {
     return res.status(400).json({ error: 'Invalid input. Please provide numbers for amount, rate, and duration.' });
   }
 
-  const monthlyRate = rate / 100 / 12;
-  const futureValue = amount * Math.pow(1 + monthlyRate, duration);
+  const interest = amount * (rate / 100) * (duration / 12);
+  const futureValue = amount + interest;
 
   res.json({ result: futureValue });
 });
 
 
-app.listen(port, () => {
+const server = app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
+
+module.exports = server;
