@@ -13,6 +13,7 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
+    "@picocss/pico": "^2.1.1",
     "@vitejs/plugin-vue": "^4.2.3",
     "vite": "^4.4.10",
     "vue": "^3.3.4"
