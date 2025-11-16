@@ -70,7 +70,7 @@ const calculateInterest = async () => {
 
 <style scoped>
 .container {
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
 }
