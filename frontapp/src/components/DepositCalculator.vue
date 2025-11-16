@@ -53,7 +53,7 @@ const calculateInterest = async () => {
         Duration (months)
         <input type="number" id="duration" v-model="duration" required>
       </label>
-      <button type="submit">Calculate</button>
+      <button type="submit" class="fit-width">Calculate</button>
     </form>
     <div v-if="result">
       <hr>
@@ -74,7 +74,7 @@ const calculateInterest = async () => {
   margin: 0 auto;
   padding: 2rem;
 }
-button {
-  width: auto;
+button.fit-width {
+  width: fit-content;
 }
 </style>
