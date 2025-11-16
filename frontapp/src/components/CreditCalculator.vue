@@ -14,7 +14,7 @@
         Długość kredytu (w miesiącach)
         <input type="number" id="creditDuration" v-model="creditDuration" required>
       </label>
-      <button type="submit">Oblicz</button>
+      <button type="submit" class="fit-width">Oblicz</button>
     </form>
     <div v-if="schedule">
       <hr>
@@ -97,7 +97,7 @@ th, td {
 th {
   background-color: #f2f2f2;
 }
-button {
-  width: auto;
+button.fit-width {
+  width: fit-content;
 }
 </style>
